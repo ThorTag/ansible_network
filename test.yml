@@ -3,11 +3,9 @@
 - name: Run show commands on routers
   hosts: 172.30.110.2
   gather_facts: no
-
+  connection: network_cli
   tasks:
-
     - ios_command:
         commands: sh ip int br
-
     - ios_command:
         commands: sh ip arp
