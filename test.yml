@@ -6,10 +6,8 @@
 
   tasks:
 
-    - name: run sh ip int br
-      ios_command:
+    - ios_command:
         commands: sh ip int br
 
-    - name: run sh ip arp
-      ios_command:
+    - ios_command:
         commands: sh ip arp
