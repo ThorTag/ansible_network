@@ -2,7 +2,7 @@
 
 - name: Run show commands on routers
   hosts: 172.30.110.2
-  gather_facts: false
+  gather_facts: no
 
   tasks:
 
