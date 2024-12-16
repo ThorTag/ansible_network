@@ -6,5 +6,3 @@
   tasks:
     - ios_command:
         commands: sh ip int br
-    - ios_command:
-        commands: sh ip arp
