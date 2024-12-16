@@ -4,6 +4,10 @@
   hosts: Switches
   gather_facts: no
   connection: local
+  vars:
+    cli:
+      username: "{{ username }}"
+      password: "{{ password }}"
   tasks:
     - ios_command:
         commands: sh ip int br
