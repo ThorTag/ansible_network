@@ -3,6 +3,7 @@
 - name: Run show commands on routers
   hosts: Switches
   gather_facts: no
+  connection:local
   tasks:
     - ios_command:
         commands: sh ip int br
