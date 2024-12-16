@@ -1,12 +1,8 @@
 ---
 
 - name: Run show commands on routers
-  hosts: Switches
+  hosts: cisco_device
   gather_facts: no
-  vars:
-    cli:
-      username: "{{ username }}"
-      password: "{{ password }}"
   tasks:
     - ios_command:
         commands: sh ip int br
