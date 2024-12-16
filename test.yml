@@ -1,7 +1,7 @@
 ---
 
 - name: Run show commands on routers
-  hosts: cisco_device
+  hosts: all
   gather_facts: no
   tasks:
     - ios_command:
