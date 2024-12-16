@@ -3,7 +3,6 @@
 - name: Run show commands on routers
   hosts: Switches
   gather_facts: no
-  connection: local
   vars:
     cli:
       username: "{{ username }}"
